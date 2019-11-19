@@ -1,0 +1,40 @@
+Description：
+A passbook is a paper book used to record how much money you store in the bank. 
+You can read passbooks as a kind of transaction detail list. In most part, passbook will record time, withdrawals/deposits, and balance of each transaction. 
+Now, you have a list of withdrawals/deposits lists, please write a program to parse them to passbook style.
+存摺是個用來記錄你在銀行存放了多少錢用的紙本，你可以將其視為一種交易明細。
+一般來說，存摺會記錄每筆交易的時間、提/存款和帳戶保有額度。現在，給你一串存/提款記錄，請將之整理成存摺格式。
+
+Input：
+Input consists several transaction records. Each record consists one integer n, which means the quantity of withdrawals/deposits. 
+n is negative if it is an withdrawals record; n is positive if it is an deposits record; n is 0 shows the end of input. 0 <= n <= 1,000,000.
+輸入包含多筆交易資料。每筆資料都包含一個整數 n ，用來表示存/提款的金額。
+n 是負數代表提款； n 是正數代表存款； 而 n 為 0 則表示輸入結束。0 <= n <= 1,000,000
+
+Output：
+Initial value of balance is 0. Please print transaction records in passbook style. Our passbook style have 3 columns. 
+First is withdrawals, 8 characters width; Second is deposits, 8 characters width; Last is balance, 12 characters width;
+If someone withdraw money more than the account keep, the transaction will be failed and withdraw 0 dollars.
+初始時餘額為 0，請將交易記錄以存摺格式輸出。其格式包含三欄。
+第一欄為提款量，8字元寬；第二欄為存款量，8字元寬；最後一列為總保有金額，佔12字元。
+若有人要提取超出保管金額的金錢時，該筆交易將失效並提取 0 元。
+
+Sample Input 1：
+2
+
+-5
+
+7
+
+-5
+
+0 
+
+Sample Output 1：
+               2           2
+
+       0                   2
+
+               7           9
+
+       5                   4

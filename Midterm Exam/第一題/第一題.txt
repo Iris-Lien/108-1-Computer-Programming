@@ -1,0 +1,36 @@
+內容：
+輸入兩組整數，請檢查兩組整數內的數字，其出現次數是否完全相同。
+Input two sets of integers, and check if the appearance times of each integer is the same.
+
+例如，{1, 2, 3} 和 {2, 3, 1} ，三個數字的出現次數都一樣，而 {1, 2, 3} 和 {2, 3, 4} 則沒有，因為 1 在第二組數字中出現次數為 0，4 在第一組數字中出現次數也為 0。
+For example, {1, 2, 3} and {2, 3, 1}, the three integers appear the same times. For {1, 2, 3} and {2, 3, 4}, the appearance times for 1 and 4 are not the same.
+
+每個數列最多包含 20 個數字。
+Each set has at most 20 integers.
+
+輸入說明：
+每組資料有兩行，
+每行的第一個數字 n 是陣列的長度，接著包含 n 個數字
+Input:
+Each problem has two line.
+In each line, the first number n is the length of the array, then there are n integers.
+
+輸出說明：
+若兩組數字都具有相同的出現次數，輸出 1，否則為 0
+Output:
+If the two sets of integers have the same appearance times of each integer, than output 1, else output 0.
+
+範例輸入：
+Example input:
+3 5 22 3
+3 22 5 3
+3 1 2 3
+3 2 3 4
+18 7 14 14 17 15 18 17 9 10 12 13 18 14 17 19 17 7 18
+18 17 14 13 14 15 17 9 18 14 7 10 18 12 17 19 17 7 18
+
+範例輸出：
+Example output:
+1
+0
+1

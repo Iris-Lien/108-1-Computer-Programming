@@ -1,0 +1,38 @@
+內容：
+寶島電力公司的電費採用累進方式進行計費：
+The power bill is calculated by progression:
+0 ~ 110 度：2 元
+111 ~ 330 度：3 元
+331 ~ 500 度：4 元
+500 度以上：5 元
+0-110: $2
+111-330: $3
+331-500: $4
+>500: $5
+
+例如小明家這個月份用了 350 度的電費，那麼他將要繳交
+For example, if use 350 degree of power, then the price of the bill is
+110 * 2 + 220 * 3 + 20 * 4 = 960的電費。
+請幫忙小明計算每個月的電費。
+
+輸入說明：
+Input:
+每個月的用電度數
+The degree of the power
+
+輸出說明：
+Output:
+每個月的電費
+The price.
+
+範例輸入：
+Input:
+90
+600
+350
+
+範例輸出：
+Output:
+180
+2060
+960

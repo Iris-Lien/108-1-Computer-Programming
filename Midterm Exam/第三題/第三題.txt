@@ -1,0 +1,18 @@
+內容：
+Read ten integers, then save them in a array a.
+Sums the values in the 10-element integer array a.
+Print the reverse order of the array a.
+
+輸入說明：
+Ten integers
+
+輸出說明：
+The sum of the ten integers.
+The reverse order of the array a.
+
+範例輸入：
+1 2 3 4 5 6 7 8 9 10
+
+範例輸出：
+55
+10 9 8 7 6 5 4 3 2 1
