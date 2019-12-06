@@ -1,33 +1,33 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 int main()
 {
-    char input;
-    int i;
-    int count=0;
+    char input, cond;
+    int counter = 0;
 
-    while(scanf("%c", &input)!=EOF)
+    for (
+        cond  = scanf("%c", &input);
+        cond != EOF;
+        cond  = scanf("%c", &input)
+    )
     {
-        //printf("%s\n",input);
         if (input == '"')
         {
-            switch (count % 2)
+            switch (counter % 2)
             {
             case 0:
                 printf("``");
                 break;
             case 1:
                 printf("''");
+                break;
             }
-            printf("%c",input);
-            count++;
-        }
 
+            counter++;
+        }
         else
             printf("%c", input);
     }
-
 
     return 0;
 }
