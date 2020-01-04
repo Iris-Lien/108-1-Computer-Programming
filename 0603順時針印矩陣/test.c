@@ -1,3 +1,10 @@
+/*
+input ex:           output ex:
+3 3                 1 2 3 6 9 8 7 4 5 
+1 2 3 
+4 5 6 
+7 8 9 
+*/
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -22,7 +29,7 @@ main()
         i = j = round;
 
         for (; j < n - round - 1; j++)
-          printf("%d ", array[i][j]);       //¨C­Ó°j°é²×ÂI³£·í§@¤U¤@­Ó°j°éªº°_ÂI
+          printf("%d ", array[i][j]);       //æ¯å€‹è¿´åœˆçµ‚é»žéƒ½ç•¶ä½œä¸‹ä¸€å€‹è¿´åœˆçš„èµ·é»ž
 
         for (; i < m - round - 1; i++)
           printf("%d ", array[i][j]);
@@ -33,7 +40,7 @@ main()
         for (; round < i; i--)
           printf("%d ", array[i][j]);
 
-        if (((m - round * 2) == 1) && ((n - round * 2) == 1))   //­Y¯x°}¬°3*3,5*5,7*7...·|¦³¤¤¤ßÂI
+        if (((m - round * 2) == 1) && ((n - round * 2) == 1))   //è‹¥çŸ©é™£ç‚º3*3,5*5,7*7...æœƒæœ‰ä¸­å¿ƒé»ž
           printf("%d ", array[i][j]);
 
         round++;
