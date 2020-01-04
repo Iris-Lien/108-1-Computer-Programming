@@ -22,7 +22,7 @@ main()
         i = j = round;
 
         for (; j < n - round - 1; j++)
-          printf("%d ", array[i][j]);
+          printf("%d ", array[i][j]);       //每個迴圈終點都當作下一個迴圈的起點
 
         for (; i < m - round - 1; i++)
           printf("%d ", array[i][j]);
@@ -33,7 +33,7 @@ main()
         for (; round < i; i--)
           printf("%d ", array[i][j]);
 
-        if (((m - round * 2) == 1) && ((n - round * 2) == 1))
+        if (((m - round * 2) == 1) && ((n - round * 2) == 1))   //若矩陣為3*3,5*5,7*7...會有中心點
           printf("%d ", array[i][j]);
 
         round++;
