@@ -1,3 +1,17 @@
+/*
+遇到字母 a 時，必須將其後的所有的字母順序反轉
+遇到字母 b 時，則須將其後所有字母複製一遍接在原字串後面
+遇到字母 c 時，要將其後的兩個字母從字串中刪除
+遇到其他字母則不做任何處理
+input ex:               output ex:
+5                       
+about                   atuob
+peter                   peter
+fractional              fralacon
+acebf                   afbec
+aliceisnotaboy          ayobalicsnotatonsiec
+*/
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
