@@ -1,3 +1,26 @@
+/*
+input ex:
+3
+This is a test.
+Count me 1 2 3 4 5.
+Wow!!!! Is this question easy?
+
+output ex:
+S 7
+T 6
+I 5
+E 4
+O 3
+A 2
+H 2
+N 2
+U 2
+W 2
+C 1
+M 1
+Q 1
+Y 1
+*/
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -20,7 +43,7 @@ main()
             {
                 if(islower(input[i]))
                 {
-                    input[i]=input[i]-32;//¤p¼gÂà¤j¼g
+                    input[i]=input[i]-32;   //å°å¯«è½‰å¤§å¯«
                     sum[input[i]-65]++;
                 }
                 else
