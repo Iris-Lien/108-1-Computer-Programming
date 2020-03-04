@@ -16,7 +16,7 @@ To `C' or not to `C', that is The Question!''
 
 int main()
 {
-    char input, cond;
+    char input;
     int counter = 0;
     while(scanf("%c", &input)!= EOF)
     {
